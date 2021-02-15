@@ -25,7 +25,7 @@ ${report.stats.failures} test(s) failed. (success: ${report.stats.passes}/${repo
 ${fails.join("\n")}
 </details>
 
-*Unittest by [meow](https://github.com/ScratchAddons/meow). [Trigger rerun](https://github.com/ScratchAddons/ScratchAddons/actions?query=workflow%3Aunittest)*
+*Unittest by [meow](https://github.com/ScratchAddons/meow). [Trigger rerun](https://github.com/ScratchAddons/ScratchAddons/actions?query=workflow%3AUnittest)*
 `.trim();
   return {title, body};
 }
