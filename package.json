@@ -1,0 +1,27 @@
+{
+  "name": "meow",
+  "version": "1.0.0",
+  "description": "Scratch Addons unittests.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScratchAddons/meow.git"
+  },
+  "author": "apple502j",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/ScratchAddons/meow/issues"
+  },
+  "homepage": "https://github.com/ScratchAddons/meow#readme",
+  "dependencies": {
+    "@octokit/core": "^3.2.5",
+    "intl-messageformat": "^9.4.7",
+    "tap": "^14.11.0",
+    "tiny-glob": "^0.2.8"
+  },
+  "type": "module"
+}

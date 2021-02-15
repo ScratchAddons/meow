@@ -1,0 +1,14 @@
+name: "Scratch Addons unittest"
+author: "apple502j"
+description: "Test Scratch Addons extension."
+runs:
+    using: "composite"
+    steps:
+        - run: npm ci
+          shell: bash
+          working-directory: ${{ github.action_path }}
+          name: "Install dependencies"
+        - run: npm run test
+          shell: bash
+          working-directory: ${{ github.action_path }}
+          name: "Run test"
