@@ -29,7 +29,7 @@ if (process.env.CI || process.env.HOT_RUN) {
     ...report,
     owner: "ScratchAddons",
     repo: "ScratchAddons",
-    labels: ["status: needs triage", "type: test failure"]
+    labels: ["status: needs triage", "scope: test failure", "type: bug"]
   });
   console.error("Test failed; created issue");
 } else {
