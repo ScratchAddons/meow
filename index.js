@@ -25,7 +25,7 @@ if (process.env.CI || process.env.HOT_RUN) {
     auth: process.env.GH_TOKEN,
     userAgent: "unittest for ScratchAddons (via octokit)"
   });
-  octokit.issues.create({
+  octokit.rest.issues.create({
     ...report,
     owner: "ScratchAddons",
     repo: "ScratchAddons",
