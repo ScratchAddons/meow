@@ -10,7 +10,7 @@ if (!process.env.GITHUB_WORKSPACE) {
     return promisify(exec)("git clone --depth 1 --branch master https://github.com/ScratchAddons/ScratchAddons.git clone");
   });
 }
-await promisify(exec)("npx tap --no-esm --no-coverage -R json ./test/*.js > ./taptest.json").catch(e => e);
+await promisify(exec)("npx tap --no-coverage -R json ./test/*.js > ./taptest.json").catch(e => e);
 const parsedResult = JSON.parse(await fs.readFile("./taptest.json", "utf8"));
 if (parsedResult.stats.failures === 0) {
   console.log("Test passed successfully.");
