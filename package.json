@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/ScratchAddons/meow#readme",
   "dependencies": {
-    "@octokit/rest": "^18.5.5",
-    "intl-messageformat": "^9.6.16",
+    "@octokit/rest": "^18.6.4",
+    "intl-messageformat": "^9.7.1",
     "tap": "^15.0.9",
     "tiny-glob": "^0.2.9"
   },
