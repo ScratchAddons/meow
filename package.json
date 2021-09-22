@@ -20,7 +20,7 @@
   "dependencies": {
     "@octokit/rest": "^18.10.0",
     "intl-messageformat": "^9.9.1",
-    "tap": "^15.0.9",
+    "tap": "^15.0.10",
     "tiny-glob": "^0.2.9"
   },
   "type": "module"
