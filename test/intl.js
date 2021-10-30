@@ -1,8 +1,10 @@
 import fs from "fs/promises";
 import path from "path";
 import tap from "tap";
-import {IntlMessageFormat} from "intl-messageformat";
+import intlMessageFormat from "intl-messageformat";
 import {default as glob} from "tiny-glob";
+
+const {IntlMessageFormat} = intlMessageFormat;
 
 tap.test("addons-l10n", async t => {
   const files = await glob(path.resolve(process.env.GITHUB_WORKSPACE || "./clone", "./addons-l10n/*/*.json"), {
