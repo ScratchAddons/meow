@@ -20,7 +20,7 @@ if (parsedResult.stats.failures === 0) {
 process.exitCode = 1;
 const report = generateFancyReport(parsedResult);
 if (process.env.CI || process.env.HOT_RUN) {
-  const {Octokit} = await import("@octokit/rest");
+  const {Octokit} = await import("octokit");
   const octokit = new Octokit({
     auth: process.env.GH_TOKEN,
     userAgent: "unittest for ScratchAddons (via octokit)"
